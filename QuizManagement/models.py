@@ -2,27 +2,27 @@ from django.db import models
 from datetime import datetime
 
 # Create your models here.
-class QuizList(models.Model):
-
-    class Meta:
-        db_table = 'quiz_list'
-
-    quiz_id = models.CharField(max_length=20,unique=True)
-    quiz_name = models.CharField(max_length=250)
-    quiz_start_time = models.DateTimeField(blank=True)
-    quiz_end_time = models.DateTimeField(blank=True)
-    created_user_id = models.CharField(max_length=250)
-    created_timestamp = models.DateTimeField(default=datetime.now, blank=True)
-    updated_user_id = models.CharField(max_length=250)
-    last_updated_timestamp = models.DateTimeField(default=datetime.now, blank=True)
-
 class ComplexityList(models.Model):
 
     class Meta:
         db_table = 'complexity_list'
 
-    complexity_id = models.CharField(max_length=20,unique=True)
+    complexity_id = models.CharField(max_length=20, unique=True)
     complexity_txt = models.CharField(max_length=250)
+    created_user_id = models.CharField(max_length=250)
+    created_timestamp = models.DateTimeField(default=datetime.now, blank=True)
+    updated_user_id = models.CharField(max_length=250)
+    last_updated_timestamp = models.DateTimeField(default=datetime.now, blank=True)
+
+class QuizList(models.Model):
+
+    class Meta:
+        db_table = 'quiz_list'
+
+    quiz_id = models.CharField(max_length=200, unique=True)
+    quiz_name = models.CharField(max_length=500)
+    quiz_start_time = models.DateTimeField(blank=True)
+    quiz_end_time = models.DateTimeField(blank=True)
     created_user_id = models.CharField(max_length=250)
     created_timestamp = models.DateTimeField(default=datetime.now, blank=True)
     updated_user_id = models.CharField(max_length=250)
@@ -33,9 +33,9 @@ class QuizQuestions(models.Model):
     class Meta:
         db_table = 'quiz_questions'
 
-    quiz_id = models.ForeignKey('QuizList',on_delete=models.PROTECT)
+    quiz_id = models.ForeignKey('QuizList', on_delete=models.PROTECT)
     question_id = models.ForeignKey('QuestionManagement.QuestionBank', on_delete=models.PROTECT)
-    complexity_id = models.ForeignKey('ComplexityList',on_delete=models.PROTECT)
+    complexity_id = models.ForeignKey('ComplexityList', on_delete=models.PROTECT)
     created_user_id = models.CharField(max_length=250)
     created_timestamp = models.DateTimeField(default=datetime.now, blank=True)
     updated_user_id = models.CharField(max_length=250)
@@ -60,6 +60,6 @@ class QuizResult(models.Model):
     quiz_id = models.ForeignKey('QuizList', on_delete=models.PROTECT)
     user_id = models.ForeignKey('UserManagement.UserList', on_delete=models.PROTECT)
     question_id = models.ForeignKey('QuestionManagement.QuestionBank', on_delete=models.PROTECT)
-    answer_id = models.CharField(max_length=250)
+    answer_id = models.CharField(max_length=30)
     created_timestamp = models.DateTimeField(default=datetime.now, blank=True)
 

@@ -4,7 +4,7 @@ from datetime import datetime
 
 # Create your models here.
 def get_image_path(instance, filename):
-    return os.path.join('images', str(instance.user_id), filename)
+    return os.path.join('images', str(instance.user_id) + "."+ filename.split('.')[-1])
 
 class RoleList(models.Model):
 
