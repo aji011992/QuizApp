@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Add New Questions</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/QuestionManagement/addQuestions.css' %}"/>
+  <script type="text/javascript" src="{% static 'JS/QuestionManagement/addQuestion.js' %}"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row" id="header-id">
+      <h1>Question Creation Application</h1>
+    </div>
+    <form method="post" id="quest-form">
+        {% csrf_token %}
+      <div class="row" id="question-wrapper-id">
+        <div class="column-1">
+            {% if question_type %}
+            <select class="quest-type" name="Ques-Type">
+            {% for ques_type in question_type %}
+              <option value={{ ques_type.question_type_txt }}>{{ ques_type.question_type_txt }}</option>
+            {% endfor %}
+            </select>
+            {% endif %}
+        </div>
+        <div class="column-2">
+          <textarea name="question" rows="5"></textarea>
+        </div>
+      </div>
+      <div class="choice-wrapper-class" id="choice-wrapper-id">
+      </div>
+      <div class="row" id="button-wrapper-id">
+        <input type="button" name="add-choice" value="+" class="column-2" onclick="addChoice()">
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+
+</html>

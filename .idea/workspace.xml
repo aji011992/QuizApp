@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38412fb1-18f3-4ce2-9f97-b450c3c5a666" name="Default Changelist" comment="" />
+    <list default="true" id="38412fb1-18f3-4ce2-9f97-b450c3c5a666" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionManagement/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionManagement/migrations/0002_auto_20190821_1725.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionManagement/migrations/0003_auto_20190821_1728.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionManagement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionManagement/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionManagement/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionManagement/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuizApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuizApp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuizApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuizApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuizManagement/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuizManagement/migrations/0002_auto_20190821_1725.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuizManagement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuizManagement/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagement/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagement/migrations/0002_auto_20190820_0832.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagement/models.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="QuizApp" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Peco1tyGLm5Bf8jUPE3l1FDeUP" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -47,7 +74,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
